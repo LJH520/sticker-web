@@ -1,0 +1,19 @@
+/* 全局样式文件 */
+@import './shadcn.css';
+@import './utilities.css';
+@import './theme.css';
+
+/* 引入 SDK 的主题配置 */
+@import '@unipus/speakami-web-sdk/styles/tailwind-theme.css';
+
+/* 让 Tailwind 扫描 SDK 的组件文件 */
+@source '../node_modules/@unipus/speakami-web-sdk/dist';
+
+/* html {
+  font-size: calc(100vw / 640 * 16);
+}
+@media (width >= 640px) {
+  html {
+    font-size: clamp(12px, 16 * (100vw / 1920), 32px);
+  }
+} */

@@ -1,0 +1,25 @@
+{
+  "button": {
+    "back": "Voltar",
+    "cancel": "Cancelar",
+    "close": "Fechar",
+    "confirm": "Confirmar",
+    "delete": "Excluir",
+    "edit": "Editar",
+    "next": "Próximo",
+    "previous": "Anterior",
+    "save": "Salvar",
+    "submit": "Enviar"
+  },
+  "language": {
+    "allLanguage": "Todos os idiomas",
+    "placeholder": "Idioma"
+  },
+  "message": {
+    "error": "Operação falhou",
+    "loading": "Carregando...",
+    "noData": "Nenhum dado disponível",
+    "noMoreData": "Sem mais dados",
+    "success": "Operação bem-sucedida"
+  }
+}

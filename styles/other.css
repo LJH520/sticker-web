@@ -1,0 +1,58 @@
+/* 自定义主题，覆盖默认配置
+  * [默认主题](https://tailwindcss.com/docs/theme)
+*/
+
+@theme {
+  /* 字体系列 */
+  /* 默认字体：默认系统字体，兼容window老版本，兼容图标 */
+  --font-sans:
+    ui-sans-serif, system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+  /* 字体大小，默认使用text-sm 14px，rem默认16px */
+  --text-xs: 0.75rem; /* 12px */
+  --text-xs--line-height: 1.5;
+  --text-sm: 0.875rem; /* 14px */
+  --text-sm--line-height: 1.5;
+  --text-base: 1rem; /* 16px */
+  --text-base--line-height: 1.5;
+  --text-lg: 1.125rem; /* 18px */
+  --text-lg--line-height: 1.5;
+  --text-xl: 1.25rem; /* 20px */
+  --text-xl--line-height: 1.5;
+  --text-2xl: 1.5rem; /* 24px */
+  --text-2xl--line-height: 1.5;
+  --text-3xl: 1.875rem; /* 30px */
+  --text-3xl--line-height: 1.5;
+  --text-4xl: 2.25rem; /* 36px */
+  --text-4xl--line-height: 1.5;
+  --text-5xl: 3rem; /* 48px */
+  --text-5xl--line-height: 1;
+  --text-6xl: 3.75rem; /* 60px */
+  --text-6xl--line-height: 1;
+  --text-7xl: 4.5rem; /* 72px */
+  --text-7xl--line-height: 1;
+  --text-8xl: 6rem; /* 96px */
+  --text-8xl--line-height: 1;
+  --text-9xl: 8rem; /* 128px */
+  --text-9xl--line-height: 1;
+
+  /* 圆角配置 */
+  --radius: 0.625rem;
+  --radius-sm: calc(var(--radius) - 4px); /* 6px */
+  --radius-md: calc(var(--radius) - 2px); /* 8px */
+  --radius-lg: var(--radius); /* 10px */
+  --radius-xl: calc(var(--radius) + 4px); /* 14px */
+  --radius-2xl: calc(var(--radius) + 8px); /* 18px */
+  --radius-3xl: calc(var(--radius) + 12px); /* 22px */
+  --radius-4xl: calc(var(--radius) + 16px); /* 26px */
+
+  --radius-xs: 0.125rem; /* 2px */
+  --radius-sm: 0.25rem; /* 4px */
+  --radius-md: 0.375rem; /* 6px */
+  --radius-lg: 0.5rem; /* 8px */
+  --radius-xl: 0.75rem; /* 12px */
+  --radius-2xl: 1rem; /* 16px */
+  --radius-3xl: 1.5rem; /* 24px */
+  --radius-4xl: 2rem; /* 32px */
+}

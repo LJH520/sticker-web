@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "speakami-web",
+  "homepage": "https://dev-speakami.golingo.cn",
+  "items": [
+    {
+      "name": "button",
+      "type": "registry:component",
+      "title": "Button",
+      "description": "A button component.",
+      "dependencies": ["@radix-ui/react-slot"],
+      "files": [
+        {
+          "path": "components/ui/button/index.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/ui/button/stories/button.stories.tsx",
+          "type": "registry:file",
+          "target": "components/ui/button/stories/"
+        }
+      ]
+    }
+  ]
+}

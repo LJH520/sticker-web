@@ -1,0 +1,96 @@
+#!/usr/bin/env groovy
+//Jenkins gitlab credentials
+def CRED_ID = 'package-key'
+// Harbor registry URL
+def REGISTRY_URL = 'swr.cn-north-4.myhuaweicloud.com'
+
+def JOB_NAME = 'dev-speakami-web-server'
+
+def BRANCH_NAME = 'feature/use-server'
+
+pipeline {
+    agent any
+    environment {
+        random_num = "${Math.abs(new Random().nextInt(8+1))}"
+        IMAGE_TAG = "${BRANCH_NAME.replace('/', '-')}-${BUILD_NUMBER}"
+    }
+    stages {
+        stage('Test') {
+            steps {
+                echo "Test"
+            }
+        }
+        stage('clone'){
+            steps{
+                checkout(
+                    [
+                        $class: 'GitSCM', 
+                        branches: [[name: "*/${BRANCH_NAME}"]],
+                        doGenerateSubmoduleConfigurations: false, 
+                        extensions: [
+                            [$class: 'RelativeTargetDirectory', relativeTargetDir: "${WORKSPACE}/data"],
+                            [$class: 'CloneOption', depth: 1, noTags: false, reference: '', shallow: true]
+                        ],
+                        submoduleCfg: [],
+                        gitTool: 'Default',
+                        userRemoteConfigs: [[credentialsId: "${CRED_ID}", url: "${GIT_REPO}"]]
+                    ]
+                )
+            }
+        }
+        stage('pre-build'){
+            steps {
+                dir("${WORKSPACE}/data/"){
+                    script {
+                        sh "cp ./build/ops/Dockerfile ./Dockerfile"
+                    }
+                }
+            }
+        }
+        stage('build') {
+            steps {
+                script {
+                    dir("${WORKSPACE}/data/"){
+                        docker.withRegistry("https://${REGISTRY_URL}"){
+                            docker.build("${REGISTRY_URL}/global/${JOB_NAME}:${IMAGE_TAG}",'--pull .').push()
+                        }
+                        sh "docker rmi ${REGISTRY_URL}/global/${JOB_NAME}:${IMAGE_TAG}"
+                    }   
+                }
+            }
+        }
+        stage('Deploy') {
+            steps {
+                wrap([$class: 'BuildUser']) {
+                     script {
+                         def REPLICAS = 1
+                         def DEPLOYMENTSTR = 'deployment'
+                         def NAME_SPACE = "global-dev"
+                         def CONFIG_NAME = 'config_hw'
+                         sh """
+                             sed "s/_VERSION_/${IMAGE_TAG}/g;s/_REPLICAS_/${REPLICAS}/g;s/_APP_NAME_/${JOB_NAME}/g" ./build/ops/${DEPLOYMENTSTR}.tpl > ./build/ops/deployment.yaml
+                             kubectl --kubeconfig /root/.kube/${CONFIG_NAME} apply -f ./build/ops/deployment.yaml -n ${NAME_SPACE}
+                         """
+                     }
+                }
+            }
+        }
+    }
+     post {
+          always {
+            wrap([$class: 'BuildUser']) {
+                script {
+                    if (!env.gitlabUserName) {
+                        user = "${env.BUILD_USER}"
+                    } else {
+                        user = "${env.gitlabUserName}"
+                    }
+                }  
+            }
+           script {
+               echo "清理工作空间..."
+               cleanWs()
+           }
+          }
+     }
+}

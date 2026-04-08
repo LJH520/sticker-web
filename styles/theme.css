@@ -1,0 +1,134 @@
+/* 自定义主题，覆盖默认配置
+  * [默认主题](https://tailwindcss.com/docs/theme)
+*/
+
+@theme {
+  /* 字体系列 */
+  /* 默认字体：默认系统字体，兼容window老版本，兼容图标 */
+  --font-sans:
+    ui-sans-serif, system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+  /* 字体大小，默认使用text-sm 14px，rem默认16px */
+  --text-xs: 0.75rem; /* 12px */
+  --text-xs--line-height: 1.5;
+  --text-sm: 0.875rem; /* 14px */
+  --text-sm--line-height: 1.5;
+  --text-base: 1rem; /* 16px */
+  --text-base--line-height: 1.5;
+  --text-lg: 1.125rem; /* 18px */
+  --text-lg--line-height: 1.5;
+  --text-xl: 1.25rem; /* 20px */
+  --text-xl--line-height: 1.5;
+  --text-2xl: 1.5rem; /* 24px */
+  --text-2xl--line-height: 1.5;
+  --text-3xl: 1.875rem; /* 30px */
+  --text-3xl--line-height: 1.5;
+  --text-4xl: 2.25rem; /* 36px */
+  --text-4xl--line-height: 1.5;
+  --text-5xl: 3rem; /* 48px */
+  --text-5xl--line-height: 1;
+  --text-6xl: 3.75rem; /* 60px */
+  --text-6xl--line-height: 1;
+  --text-7xl: 4.5rem; /* 72px */
+  --text-7xl--line-height: 1;
+  --text-8xl: 6rem; /* 96px */
+  --text-8xl--line-height: 1;
+  --text-9xl: 8rem; /* 128px */
+  --text-9xl--line-height: 1;
+
+  /* 颜色 */
+  /* 默认背景颜色 */
+  --color-background: white;
+  /* 默认文本颜色 */
+  --color-foreground: black;
+
+  /* bg */
+  /* #EDF4F8 */
+  /* color */
+  /* #0F3F6A */
+
+  /* 输入框的背景颜色 */
+  --color-input: #74787b4d;
+  /* 默认占位符文本颜色 */
+  --color-placeholder: #bcbfbd;
+  /* 边框颜色 */
+  --color-border: #74787b4d;
+  /* 聚焦时的外边框颜色（如表单控件的聚焦状态）。用于聚焦状态的高亮效果，例如输入框的 :focus 状态。 */
+  --color-ring: oklch(0.552 0.016 285.938);
+  /* 柔和的颜色，用于弱化的内容。用于禁用按钮、次要文本或背景色。 */
+  --color-muted: #74787b4d;
+  /* 柔和颜色的前景色。 */
+  --color-muted-foreground: #bcbfbd;
+  /* 突出的强调颜色（Accent Color）。用于强调的元素，如选中的标签、活动状态的按钮等。 */
+  --color-accent: #121414;
+  /* 强调颜色的前景色。 */
+  --color-accent-foreground: #edf2f0;
+
+  /* 主色、品牌色  */
+  --color-primary: #1677ff;
+  /* 主色的文本颜色。 */
+  --color-primary-foreground: #ffffff;
+  /* 主色的悬停颜色。 */
+  --color-primary-hover: #4096ff;
+  /* 主色的激活颜色。 */
+  --color-primary-active: #0958d9;
+
+  /* 成功色 */
+  --color-success: #52c41a;
+  /* 成功色的文本颜色。 */
+  --color-success-foreground: #ffffff;
+  /* 成功色的悬停颜色。 */
+  --color-success-hover: #95de64;
+  /* 成功色的激活颜色。 */
+  --color-success-active: #389e0d;
+
+  /* 警告色 */
+  --color-warning: #faad14;
+  /* 警告色的文本颜色。 */
+  --color-warning-foreground: #ffffff;
+  /* 警告色的悬停颜色。 */
+  --color-warning-hover: #ffd666;
+  /* 警告色的激活颜色。 */
+  --color-warning-active: #d48806;
+
+  /* 危险色 */
+  --color-danger: #ff4d4f;
+  /* 危险色的文本颜色。 */
+  --color-danger-foreground: #ffffff;
+  /* 危险色的悬停颜色。 */
+  --color-danger-hover: #ff7875;
+  /* 危险色的激活颜色。 */
+  --color-danger-active: #d9363e;
+
+  /* 默认颜色 */
+  --color-default: #48514f;
+  /* 默认颜色的文本颜色。 */
+  --color-default-foreground: #ffffff;
+  /* 默认颜色的悬停颜色。 */
+  --color-default-hover: #717876;
+  /* 默认颜色的激活颜色。 */
+  --color-default-active: #595e5d;
+
+  /* 卡片组件的背景颜色。 */
+  --color-card: oklch(0.21 0.006 285.885);
+  /* 卡片组件的前景颜色（通常是文本颜色）。 */
+  --color-card-foreground: #121414;
+
+  /* 弹出层（Popover）的背景颜色。 */
+  --color-popover: #121414;
+  /* 弹出层的前景颜色（通常是文本颜色）。 */
+  --color-popover-foreground: #edf2f0;
+
+  /** 弹出层（dialog）的背景颜色。 */
+  --color-dialog: #12141480;
+
+  /** sidebar 侧边栏  */
+  --color-sidebar-foreground: #121414;
+  --color-sidebar-primary: oklch(0.488 0.243 264.376);
+  --color-sidebar-primary-foreground: #121414;
+  --color-sidebar-accent: oklch(0.274 0.006 286.033);
+  --color-sidebar-accent-foreground: #121414;
+  --color-sidebar-border: oklch(1 0 0 / 10%);
+  --color-sidebar-ring: oklch(0.552 0.016 285.938);
+}

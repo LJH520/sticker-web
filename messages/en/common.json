@@ -1,0 +1,25 @@
+{
+  "button": {
+    "back": "Back",
+    "cancel": "Cancel",
+    "close": "Close",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "edit": "Edit",
+    "next": "Next",
+    "previous": "Previous",
+    "save": "Save",
+    "submit": "Submit"
+  },
+  "language": {
+    "allLanguage": "All languages",
+    "placeholder": "Language"
+  },
+  "message": {
+    "error": "Operation failed",
+    "loading": "Loading...",
+    "noData": "No data available",
+    "noMoreData": "No more data",
+    "success": "Operation successful"
+  }
+}

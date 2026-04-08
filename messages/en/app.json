@@ -1,0 +1,164 @@
+{
+  "AvatarSelectDialog": {
+    "allAvatar": "All language partners",
+    "cancel": "Cancel",
+    "description": "Please choose a language partner to start practicing",
+    "ok": "Start a conversation",
+    "selectAvatar": "Please choose a language partner"
+  },
+  "LoginDialog": {
+    "email": {
+      "invalid": "Please enter a valid email address",
+      "name": "Email",
+      "placeholder": "Please enter your email address"
+    },
+    "emailLogin": "Use email",
+    "googleLogin": "Google Quick Login",
+    "loggingIn": "Login...",
+    "login": "Log in",
+    "login-button": "Register/Login",
+    "loginSuccess": "Login successful",
+    "other": "other ways",
+    "resend": "Resend",
+    "sendVerifyCode": "Send verification code",
+    "sent": "Sent",
+    "sentError": "Sent too frequently",
+    "sentSuccess": "The verification code has been sent, please log in to your email to view it",
+    "title": "Register/Login",
+    "verificationCode": {
+      "invalid": "Please enter a valid verification code",
+      "name": "Verification Code",
+      "placeholder": "Please enter the verification code"
+    }
+  },
+  "blog": {
+    "tableOfContents": "Table of Contents",
+    "tags": "Tags"
+  },
+  "chat": {
+    "metadata": {
+      "description": "Interact with our intelligent chat bot here for instant help and support.",
+      "title": "Chat"
+    }
+  },
+  "debates": {
+    "joinPartyOpponent": "Join opposition",
+    "joinPartyProponent": "Join affirmative",
+    "metadata": {
+      "description": "Join Speakami language debates to challenge your critical thinking. Improve your argumentative speaking skills and logic through structured AI debates.",
+      "title": "AI Debate Challenges | Logic and Persuasion | Speakami"
+    },
+    "name": "Debate competition",
+    "opponentView": "Opposition view",
+    "proponentView": "Positive view"
+  },
+  "home": {
+    "AICompanion": {
+      "button": "Start a conversation",
+      "title": "AI language companion"
+    },
+    "TalkList": {
+      "debate": {
+        "description": "Logic versus reaction. \nChallenge the AI's rebuttal and practice advanced persuasion skills in fierce attack and defense.",
+        "title": "Debate competition"
+      },
+      "scene": {
+        "description": "Immersive restoration of real scenes. \nFrom ordering coffee to business negotiations, AI helps you rehearse every key conversation.",
+        "title": "Scenario actual combat"
+      },
+      "topic": {
+        "description": "Reject useless greetings. \nConduct in-depth discussions on hot topics and expand the core vocabulary library through natural communication.",
+        "title": "Topic discussion"
+      }
+    },
+    "aside": {
+      "learningHall": "Study hall",
+      "loginRegister": "Sign Up / Log In",
+      "logout": "Log out"
+    },
+    "deployNow": "Deploy Now",
+    "description": "Looking for a starting point or more instructions? Head over to <templates>Templates</templates> or the <learning>Learning</learning> center.",
+    "documentation": "Documentation",
+    "learning": "Learning",
+    "metadata": {
+      "description": "Master new languages with Speakami AI partners. Practice daily conversations, discuss topics, roleplay scenarios, and debate to boost fluency.",
+      "title": "AI Language Partner and Learning Platform | Speakami"
+    },
+    "templates": "Templates",
+    "title": "To get started, edit the page.tsx file."
+  },
+  "layout": {
+    "actions": {
+      "account": "My Account",
+      "cart": "Cart",
+      "cartCount": "0",
+      "login": "Login / Sign up",
+      "logout": "Log out"
+    },
+    "brand": {
+      "name": "Speakami",
+      "slogan": "AI Language Store"
+    },
+    "drawer": {
+      "hint": "Browse Speakami like a storefront.",
+      "title": "Navigation"
+    },
+    "footer": {
+      "description": "A storefront-style AI hub for global language learners.",
+      "note": "Products, editorial content, and policies inside a single storefront frame.",
+      "shopWindow": "Browse Speakami products, editorial content, and help like a storefront."
+    },
+    "links": {
+      "privacyPolicy": "Privacy Policy",
+      "termsOfUse": "Terms of Use"
+    },
+    "nav": {
+      "blog": "BLOG",
+      "faq": "FAQ",
+      "products": "Products"
+    },
+    "sections": {
+      "discover": "Discover",
+      "support": "Support"
+    }
+  },
+  "notFound": {
+    "metadata": {
+      "description": "Page not found, please check if the URL is correct.",
+      "title": "Page not found"
+    },
+    "page": {
+      "backToHome": "Return to homepage",
+      "description": "Page not found, please check if the URL is correct.",
+      "title": "404 Page Not Found"
+    }
+  },
+  "roleplayScenarios": {
+    "metadata": {
+      "description": "Practice navigating real-world situations. Learn to handle conversations for ordering food, job interviews, and travel with Speakami AI simulations.",
+      "title": "Real-Life Roleplay Scenarios | Immersive Learning | Speakami"
+    },
+    "name": "Scenario actual combat",
+    "startTask": "Start task"
+  },
+  "topics": {
+    "metadata": {
+      "description": "Explore a wide range of conversation topics covering daily life, travel, and business. Expand your vocabulary and speaking confidence at Speakami.",
+      "title": "Conversation Topics for Speaking Practice | Speakami"
+    },
+    "name": "Topic discussion",
+    "startTopic": "Start discussing"
+  },
+  "tutor": {
+    "metadata": {
+      "description": "Start a {language} conversation with {name} on Speakami. Improve your listening and speaking skills through interactive chat and real-time feedback.",
+      "title": "Learn {language} with {name} | AI {language} Tutor | Speakami"
+    }
+  },
+  "tutorDetail": {
+    "metadata": {
+      "description": "Start a {language} conversation with {name} on Speakami. Improve your listening and speaking skills through interactive chat and real-time feedback.",
+      "title": "Learn {language} with {name} | AI {language} Tutor | Speakami"
+    }
+  }
+}

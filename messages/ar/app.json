@@ -1,0 +1,164 @@
+{
+  "AvatarSelectDialog": {
+    "allAvatar": "جميع شركاء اللغة",
+    "cancel": "إلغاء",
+    "description": "يرجى اختيار شريك لغة لبدء الممارسة",
+    "ok": "بدء محادثة",
+    "selectAvatar": "يرجى اختيار شريك لغة"
+  },
+  "LoginDialog": {
+    "email": {
+      "invalid": "يرجى إدخال عنوان بريد إلكتروني صالح",
+      "name": "البريد الإلكتروني",
+      "placeholder": "يرجى إدخال عنوان بريدك الإلكتروني"
+    },
+    "emailLogin": "استخدام البريد الإلكتروني",
+    "googleLogin": "تسجيل الدخول السريع عبر Google",
+    "loggingIn": "جاري تسجيل الدخول...",
+    "login": "تسجيل الدخول",
+    "login-button": "تسجيل/دخول",
+    "loginSuccess": "تم تسجيل الدخول بنجاح",
+    "other": "طرق أخرى",
+    "resend": "إعادة إرسال",
+    "sendVerifyCode": "إرسال رمز التحقق",
+    "sent": "تم الإرسال",
+    "sentError": "تم الإرسال بشكل متكرر جدًا",
+    "sentSuccess": "تم إرسال رمز التحقق، يرجى تسجيل الدخول إلى بريدك الإلكتروني لعرضه",
+    "title": "تسجيل/دخول",
+    "verificationCode": {
+      "invalid": "يرجى إدخال رمز تحقق صالح",
+      "name": "رمز التحقق",
+      "placeholder": "يرجى إدخال رمز التحقق"
+    }
+  },
+  "blog": {
+    "tableOfContents": "جدول المحتويات",
+    "tags": "الوسوم"
+  },
+  "chat": {
+    "metadata": {
+      "description": "تفاعل مع روبوت الدردشة الذكي الخاص بنا هنا للحصول على مساعدة ودعم فوري.",
+      "title": "دردشة"
+    }
+  },
+  "debates": {
+    "joinPartyOpponent": "الانضمام إلى المعارضة",
+    "joinPartyProponent": "الانضمام إلى المؤيدين",
+    "metadata": {
+      "description": "انضم إلى مناظرات Speakami اللغوية لتحدي تفكيرك النقدي. حسّن مهاراتك في التحدث الجدلي والمنطق من خلال المناظرات المنظمة مع الذكاء الاصطناعي.",
+      "title": "تحديات المناظرة بالذكاء الاصطناعي | المنطق والإقناع | Speakami"
+    },
+    "name": "مسابقة المناظرة",
+    "opponentView": "وجهة نظر المعارضة",
+    "proponentView": "وجهة نظر المؤيدين"
+  },
+  "home": {
+    "AICompanion": {
+      "button": "بدء محادثة",
+      "title": "رفيق اللغة بالذكاء الاصطناعي"
+    },
+    "TalkList": {
+      "debate": {
+        "description": "المنطق مقابل الرد. تحدى رد الذكاء الاصطناعي وتمرن على مهارات الإقناع المتقدمة في الهجوم والدفاع الشرس.",
+        "title": "مسابقة المناظرة"
+      },
+      "scene": {
+        "description": "استعادة مغمورة للمشاهد الحقيقية. من طلب القهوة إلى المفاوضات التجارية، يساعدك الذكاء الاصطناعي في التمرين على كل محادثة رئيسية.",
+        "title": "المشهد العملي"
+      },
+      "topic": {
+        "description": "ارفض التحيات غير المجدية. أجرِ مناقشات متعمقة حول المواضيع الساخنة وقم بتوسيع مكتبة المفردات الأساسية من خلال التواصل الطبيعي.",
+        "title": "مناقشة الموضوع"
+      }
+    },
+    "aside": {
+      "learningHall": "قاعة التعلم",
+      "loginRegister": "تسجيل/دخول",
+      "logout": "تسجيل الخروج"
+    },
+    "deployNow": "نشر الآن",
+    "description": "تبحث عن نقطة بداية أو المزيد من التعليمات؟ توجه إلى <templates>القوالب</templates> أو مركز <learning>التعلم</learning>.",
+    "documentation": "الوثائق",
+    "learning": "التعلم",
+    "metadata": {
+      "description": "أتقن لغات جديدة مع شركاء Speakami بالذكاء الاصطناعي. تمرن على المحادثات اليومية، وناقش المواضيع، وتمثل الأدوار في السيناريوهات، وتناظر لتعزيز الطلاقة.",
+      "title": "شريك اللغة بالذكاء الاصطناعي ومنصة التعلم | Speakami"
+    },
+    "templates": "القوالب",
+    "title": "للبدء، قم بتحرير ملف page.tsx."
+  },
+  "layout": {
+    "actions": {
+      "account": "My Account",
+      "cart": "Cart",
+      "cartCount": "0",
+      "login": "Login / Sign up",
+      "logout": "Log out"
+    },
+    "brand": {
+      "name": "Speakami",
+      "slogan": "AI Language Store"
+    },
+    "drawer": {
+      "hint": "Browse Speakami like a storefront.",
+      "title": "Navigation"
+    },
+    "footer": {
+      "description": "A storefront-style AI hub for global language learners.",
+      "note": "Products, editorial content, and policies inside a single storefront frame.",
+      "shopWindow": "Browse Speakami products, editorial content, and help like a storefront."
+    },
+    "links": {
+      "privacyPolicy": "Privacy Policy",
+      "termsOfUse": "Terms of Use"
+    },
+    "nav": {
+      "blog": "BLOG",
+      "faq": "FAQ",
+      "products": "Products"
+    },
+    "sections": {
+      "discover": "Discover",
+      "support": "Support"
+    }
+  },
+  "notFound": {
+    "metadata": {
+      "description": "الصفحة غير موجودة، يرجى التحقق مما إذا كان الرابط صحيحًا.",
+      "title": "الصفحة غير موجودة"
+    },
+    "page": {
+      "backToHome": "العودة إلى الصفحة الرئيسية",
+      "description": "الصفحة غير موجودة، يرجى التحقق مما إذا كان الرابط صحيحًا.",
+      "title": "404 الصفحة غير موجودة"
+    }
+  },
+  "roleplayScenarios": {
+    "metadata": {
+      "description": "تمرن على التنقل في المواقف الواقعية. تعلم التعامل مع المحادثات لطلب الطعام، ومقابلات العمل، والسفر مع محاكاة Speakami بالذكاء الاصطناعي.",
+      "title": "سيناريوهات تمثيل الأدوار في الحياة الواقعية | التعلم المغمور | Speakami"
+    },
+    "name": "المشهد العملي",
+    "startTask": "بدء المهمة"
+  },
+  "topics": {
+    "metadata": {
+      "description": "استكشف مجموعة واسعة من مواضيع المحادثة التي تغطي الحياة اليومية، والسفر، والأعمال. وسّع مفرداتك وثقتك في التحدث في Speakami.",
+      "title": "مواضيع المحادثة لممارسة التحدث | Speakami"
+    },
+    "name": "مناقشة الموضوع",
+    "startTopic": "بدء المناقشة"
+  },
+  "tutor": {
+    "metadata": {
+      "description": "ابدأ محادثة {language} مع {name} على Speakami. حسّن مهاراتك في الاستماع والتحدث من خلال الدردشة التفاعلية والملاحظات الفورية.",
+      "title": "تعلم {language} مع {name} | مدرس {language} بالذكاء الاصطناعي | Speakami"
+    }
+  },
+  "tutorDetail": {
+    "metadata": {
+      "description": "ابدأ محادثة {language} مع {name} على Speakami. حسّن مهاراتك في الاستماع والتحدث من خلال الدردشة التفاعلية والملاحظات الفورية.",
+      "title": "تعلم {language} مع {name} | مدرس {language} بالذكاء الاصطناعي | Speakami"
+    }
+  }
+}

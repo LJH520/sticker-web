@@ -1,0 +1,164 @@
+{
+  "AvatarSelectDialog": {
+    "allAvatar": "Tous les partenaires linguistiques",
+    "cancel": "Annuler",
+    "description": "Veuillez choisir un partenaire linguistique pour commencer à pratiquer",
+    "ok": "Démarrer une conversation",
+    "selectAvatar": "Veuillez choisir un partenaire linguistique"
+  },
+  "LoginDialog": {
+    "email": {
+      "invalid": "Veuillez saisir une adresse e-mail valide",
+      "name": "E-mail",
+      "placeholder": "Veuillez saisir votre adresse e-mail"
+    },
+    "emailLogin": "Utiliser l'e-mail",
+    "googleLogin": "Connexion rapide Google",
+    "loggingIn": "Connexion en cours...",
+    "login": "Se connecter",
+    "login-button": "S'inscrire/Se connecter",
+    "loginSuccess": "Connexion réussie",
+    "other": "Autres moyens",
+    "resend": "Renvoyer",
+    "sendVerifyCode": "Envoyer le code de vérification",
+    "sent": "Envoyé",
+    "sentError": "Envoyé trop fréquemment",
+    "sentSuccess": "Le code de vérification a été envoyé, veuillez vous connecter à votre e-mail pour le consulter",
+    "title": "S'inscrire/Se connecter",
+    "verificationCode": {
+      "invalid": "Veuillez saisir un code de vérification valide",
+      "name": "Code de vérification",
+      "placeholder": "Veuillez saisir le code de vérification"
+    }
+  },
+  "blog": {
+    "tableOfContents": "Table des matières",
+    "tags": "Étiquettes"
+  },
+  "chat": {
+    "metadata": {
+      "description": "Interagissez avec notre chatbot intelligent ici pour une aide et un support instantanés.",
+      "title": "Chat"
+    }
+  },
+  "debates": {
+    "joinPartyOpponent": "Rejoindre l'opposition",
+    "joinPartyProponent": "Rejoindre les partisans",
+    "metadata": {
+      "description": "Rejoignez les débats linguistiques Speakami pour défier votre pensée critique. Améliorez vos compétences d'expression argumentative et de logique grâce à des débats structurés avec l'IA.",
+      "title": "Défis de débat avec IA | Logique et persuasion | Speakami"
+    },
+    "name": "Compétition de débat",
+    "opponentView": "Point de vue de l'opposition",
+    "proponentView": "Point de vue des partisans"
+  },
+  "home": {
+    "AICompanion": {
+      "button": "Démarrer une conversation",
+      "title": "Compagnon linguistique IA"
+    },
+    "TalkList": {
+      "debate": {
+        "description": "Logique contre réaction. Défiez la réfutation de l'IA et pratiquez des compétences de persuasion avancées dans des attaques et défenses intenses.",
+        "title": "Compétition de débat"
+      },
+      "scene": {
+        "description": "Restauration immersive de scènes réelles. De la commande de café aux négociations commerciales, l'IA vous aide à répéter chaque conversation clé.",
+        "title": "Scénario pratique"
+      },
+      "topic": {
+        "description": "Rejetez les salutations inutiles. Menez des discussions approfondies sur des sujets brûlants et développez le vocabulaire de base grâce à une communication naturelle.",
+        "title": "Discussion de sujets"
+      }
+    },
+    "aside": {
+      "learningHall": "Salle d'étude",
+      "loginRegister": "S'inscrire/Se connecter",
+      "logout": "Se déconnecter"
+    },
+    "deployNow": "Déployer maintenant",
+    "description": "Vous cherchez un point de départ ou plus d'instructions ? Rendez-vous sur les <templates>Modèles</templates> ou le centre d'<learning>Apprentissage</learning>.",
+    "documentation": "Documentation",
+    "learning": "Apprentissage",
+    "metadata": {
+      "description": "Maîtrisez de nouvelles langues avec les partenaires Speakami IA. Pratiquez des conversations quotidiennes, discutez de sujets, jouez des rôles dans des scénarios et débattez pour améliorer la fluidité.",
+      "title": "Partenaire linguistique IA et plateforme d'apprentissage | Speakami"
+    },
+    "templates": "Modèles",
+    "title": "Pour commencer, modifiez le fichier page.tsx."
+  },
+  "layout": {
+    "actions": {
+      "account": "My Account",
+      "cart": "Cart",
+      "cartCount": "0",
+      "login": "Login / Sign up",
+      "logout": "Log out"
+    },
+    "brand": {
+      "name": "Speakami",
+      "slogan": "AI Language Store"
+    },
+    "drawer": {
+      "hint": "Browse Speakami like a storefront.",
+      "title": "Navigation"
+    },
+    "footer": {
+      "description": "A storefront-style AI hub for global language learners.",
+      "note": "Products, editorial content, and policies inside a single storefront frame.",
+      "shopWindow": "Browse Speakami products, editorial content, and help like a storefront."
+    },
+    "links": {
+      "privacyPolicy": "Privacy Policy",
+      "termsOfUse": "Terms of Use"
+    },
+    "nav": {
+      "blog": "BLOG",
+      "faq": "FAQ",
+      "products": "Products"
+    },
+    "sections": {
+      "discover": "Discover",
+      "support": "Support"
+    }
+  },
+  "notFound": {
+    "metadata": {
+      "description": "Page non trouvée, veuillez vérifier si l'URL est correcte.",
+      "title": "Page non trouvée"
+    },
+    "page": {
+      "backToHome": "Retour à la page d'accueil",
+      "description": "Page non trouvée, veuillez vérifier si l'URL est correcte.",
+      "title": "404 Page non trouvée"
+    }
+  },
+  "roleplayScenarios": {
+    "metadata": {
+      "description": "Pratiquez la navigation dans des situations réelles. Apprenez à gérer des conversations pour commander de la nourriture, des entretiens d'embauche et des voyages avec des simulations Speakami IA.",
+      "title": "Scénarios de jeu de rôle de la vie réelle | Apprentissage immersif | Speakami"
+    },
+    "name": "Scénario pratique",
+    "startTask": "Démarrer la tâche"
+  },
+  "topics": {
+    "metadata": {
+      "description": "Explorez un large éventail de sujets de conversation couvrant la vie quotidienne, les voyages et les affaires. Développez votre vocabulaire et votre confiance à l'oral chez Speakami.",
+      "title": "Sujets de conversation pour pratiquer la parole | Speakami"
+    },
+    "name": "Discussion de sujets",
+    "startTopic": "Commencer la discussion"
+  },
+  "tutor": {
+    "metadata": {
+      "description": "Démarrez une conversation en {language} avec {name} sur Speakami. Améliorez vos compétences d'écoute et d'expression grâce au chat interactif et aux retours en temps réel.",
+      "title": "Apprenez le {language} avec {name} | Tuteur {language} IA | Speakami"
+    }
+  },
+  "tutorDetail": {
+    "metadata": {
+      "description": "Démarrez une conversation en {language} avec {name} sur Speakami. Améliorez vos compétences d'écoute et d'expression grâce au chat interactif et aux retours en temps réel.",
+      "title": "Apprenez le {language} avec {name} | Tuteur {language} IA | Speakami"
+    }
+  }
+}

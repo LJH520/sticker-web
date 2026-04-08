@@ -1,0 +1,2 @@
+# Mark generated files so GitHub can collapse them in PRs
+/api/generated/* linguist-generated=true
