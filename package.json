@@ -33,6 +33,7 @@
     "@radix-ui/react-select": "^2.2.6",
     "@radix-ui/react-separator": "^1.1.8",
     "@radix-ui/react-slot": "^1.2.4",
+    "@shopify/storefront-api-client": "^1.0.10",
     "@tencentcloud/chat": "^3.6.1",
     "@unipus/speakami-web-sdk": "0.1.5",
     "axios": "^1.13.2",

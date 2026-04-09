@@ -5,6 +5,12 @@ import { ComponentVariantsProps } from '../types/component';
 import { LayoutFooter } from './layout-footer';
 import { LayoutHeader } from './layout-header';
 
+async function getCurrentYear() {
+  'use cache';
+
+  return new Date().getFullYear();
+}
+
 const variants = tv({
   slots: {
     base: 'flex h-dvh min-h-dvh flex-col overflow-hidden bg-[radial-gradient(circle_at_top,#f7fbfd_0%,#eff7fa_32%,#edf4f7_62%,#e8f0f4_100%)] text-[#062936]',
@@ -19,13 +25,14 @@ const variants = tv({
 });
 
 /** 默认官网布局 */
-export function Layout({
+export async function Layout({
   children,
   classNames,
   className,
   ...props
 }: ComponentVariantsProps<typeof variants> & React.ComponentProps<'div'>) {
   const slots = variants();
+  const year = await getCurrentYear();
 
   return (
     <div
@@ -40,7 +47,7 @@ export function Layout({
           <LayoutContent className={slots.content({ className: classNames?.content })}>
             {children}
           </LayoutContent>
-          <LayoutFooter className={slots.footer({ className: classNames?.footer })} />
+          <LayoutFooter className={slots.footer({ className: classNames?.footer })} year={year} />
         </div>
       </div>
 

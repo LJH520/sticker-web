@@ -56,6 +56,9 @@ const nextConfig: NextConfig = {
     API_URL: process.env.API_URL || '',
     APP_URL: process.env.APP_URL,
     SPEAKAMI_APP_ID: process.env.SPEAKAMI_APP_ID || '',
+    SHOPIFY_STORE_DOMAIN: process.env.SHOPIFY_STORE_DOMAIN || '',
+    SHOPIFY_STOREFRONT_ACCESS_TOKEN: process.env.SHOPIFY_STOREFRONT_ACCESS_TOKEN || '',
+    SHOPIFY_STOREFRONT_API_VERSION: process.env.SHOPIFY_STOREFRONT_API_VERSION || '',
   },
   async rewrites() {
     const defaultRewrites = [

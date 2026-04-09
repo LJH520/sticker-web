@@ -5,7 +5,11 @@ import { useTranslations } from 'next-intl';
 import { BrandLink, getFooterLinkGroups, NavigationItem } from './layout-shared';
 import { Link } from '../ui/link';
 
-export function LayoutFooter({ className, ...props }: React.ComponentProps<'footer'>) {
+type LayoutFooterProps = React.ComponentProps<'footer'> & {
+  year: number;
+};
+
+export function LayoutFooter({ className, year, ...props }: LayoutFooterProps) {
   const t = useTranslations('app.layout');
   const linkGroups = getFooterLinkGroups(t);
 
@@ -65,7 +69,7 @@ export function LayoutFooter({ className, ...props }: React.ComponentProps<'foot
 
       <div className="mt-6 flex flex-col gap-3 border-t border-[#d7e4eb] pt-5 text-sm text-[#6f8a97] sm:flex-row sm:items-center sm:justify-between">
         <span>
-          {t('brand.name')} © {new Date().getFullYear()}
+          {t('brand.name')} © {year}
         </span>
         <span>{t('footer.shopWindow')}</span>
       </div>
