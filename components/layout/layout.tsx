@@ -13,14 +13,14 @@ async function getCurrentYear() {
 
 const variants = tv({
   slots: {
-    base: 'flex h-dvh min-h-dvh flex-col overflow-hidden bg-[radial-gradient(circle_at_top,#f7fbfd_0%,#eff7fa_32%,#edf4f7_62%,#e8f0f4_100%)] text-[#062936]',
+    base: 'mx-auto flex min-h-dvh max-w-360 flex-col text-[#062936]',
     header:
-      'sticky top-0 z-40 border-b border-[#d5e4eb] bg-[#f9fcfe]/92 shadow-[0_12px_30px_-24px_rgba(6,41,54,0.55)] backdrop-blur-xl',
+      'box-border w-full max-w-340 min-w-[295px] rounded-full border-2 border-[#321403] bg-white',
     scrollArea: 'flex-1 overflow-y-auto overscroll-y-contain',
     shell: 'mx-auto flex min-h-full w-full max-w-400 flex-col',
-    content: 'flex flex-1 flex-col px-4 pt-4 pb-10 sm:px-6 sm:pt-6 sm:pb-12 md:px-10 lg:px-8',
+    content: 'flex flex-1 flex-col',
     footer:
-      'mt-8 border-t border-[#d7e4eb] bg-[linear-gradient(180deg,rgba(255,255,255,0.55)_0%,rgba(232,240,244,0.9)_100%)] px-4 py-8 sm:px-6 md:px-10 lg:px-8',
+      'mt-8 rounded-t-[38px] bg-[#F3C738] px-[clamp(1rem,8vw,7.5rem)] py-[clamp(1rem,7vw,7.5rem)]',
   },
 });
 
@@ -40,7 +40,9 @@ export async function Layout({
       className={cn(slots.base({ className: classNames?.base }), className)}
       {...props}
     >
-      <LayoutHeader className={slots.header({ className: classNames?.header })} />
+      <div className="fixed inset-x-0 top-10 z-40 flex min-w-[375px] justify-center px-10 max-md:px-4">
+        <LayoutHeader className={slots.header({ className: classNames?.header })} />
+      </div>
 
       <div className={slots.scrollArea({ className: classNames?.scrollArea })}>
         <div className={slots.shell({ className: classNames?.shell })}>

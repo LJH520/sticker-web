@@ -2,12 +2,17 @@
   * [默认主题](https://tailwindcss.com/docs/theme)
 */
 
+@theme inline {
+  --font-sigmar: var(--font-sigmar-google);
+}
+
 @theme {
   /* 字体系列 */
-  /* 默认字体：默认系统字体，兼容window老版本，兼容图标 */
+  /* 默认字体：SF Pro 优先，其他平台回退到系统无衬线字体 */
   --font-sans:
-    ui-sans-serif, system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    'SF Pro Display', 'SF Pro Text', -apple-system, BlinkMacSystemFont, ui-sans-serif, system-ui,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
   /* 字体大小，默认使用text-sm 14px，rem默认16px */
   --text-xs: 0.75rem; /* 12px */

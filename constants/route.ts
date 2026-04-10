@@ -22,4 +22,8 @@ export const enum RouteEnum {
   // blogDetail = '/blog/:slug',
   /** 联系我们页面 */
   contactUs = '/contact-us',
+  /** 关于我们页面 */
+  aboutUs = '/about-us',
+  /** 退货政策页面 */
+  returnPolicy = '/return-policy',
 }

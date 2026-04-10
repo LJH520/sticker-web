@@ -28,7 +28,26 @@ export default async function Page({ params }: { params: Promise<{ locale: Local
   setRequestLocale(locale);
 
   return (
-    <section className="flex h-full flex-1 flex-col bg-[#EDF4F8] p-10">
+    <section className="flex h-full flex-1 flex-col bg-[url('/images/home-bg.png')] bg-cover bg-center bg-no-repeat p-10 pt-30">
+      <h1 className="text-2xl font-bold text-gray-800">{'首页'}</h1>
+      <h1 className="text-2xl font-bold text-gray-800">{'首页'}</h1>
+      <h1 className="text-2xl font-bold text-gray-800">{'首页'}</h1>
+      <h1 className="text-2xl font-bold text-gray-800">{'首页'}</h1>
+      <h1 className="text-2xl font-bold text-gray-800">{'首页'}</h1>
+      <h1 className="text-2xl font-bold text-gray-800">{'首页'}</h1>
+      <h1 className="text-2xl font-bold text-gray-800">{'首页'}</h1>
+      <h1 className="text-2xl font-bold text-gray-800">{'首页'}</h1>
+      <h1 className="text-2xl font-bold text-gray-800">{'首页'}</h1>
+      <h1 className="text-2xl font-bold text-gray-800">{'首页'}</h1>
+      <h1 className="text-2xl font-bold text-gray-800">{'首页'}</h1>
+      <h1 className="text-2xl font-bold text-gray-800">{'首页'}</h1>
+      <h1 className="text-2xl font-bold text-gray-800">{'首页'}</h1>
+      <h1 className="text-2xl font-bold text-gray-800">{'首页'}</h1>
+      <h1 className="text-2xl font-bold text-gray-800">{'首页'}</h1>
+      <h1 className="text-2xl font-bold text-gray-800">{'首页'}</h1>
+      <h1 className="text-2xl font-bold text-gray-800">{'首页'}</h1>
+      <h1 className="text-2xl font-bold text-gray-800">{'首页'}</h1>
+      <h1 className="text-2xl font-bold text-gray-800">{'首页'}</h1>
       <h1 className="text-2xl font-bold text-gray-800">{'首页'}</h1>
       <h1 className="text-2xl font-bold text-gray-800">{'首页'}</h1>
       <h1 className="text-2xl font-bold text-gray-800">{'首页'}</h1>

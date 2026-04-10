@@ -8,20 +8,22 @@ import PTIcon from './assets/pt-icon.svg';
 import RUIcon from './assets/ru-icon.svg';
 import ZHIcon from './assets/zh-icon.svg';
 
-export type Locale = 'en' | 'zh' | 'ar' | 'es' | 'fr' | 'ru' | 'pt';
+// export type Locale = 'en' | 'zh' | 'ar' | 'es' | 'fr' | 'ru' | 'pt';
+export type Locale = 'en';
 
-export const locales: Locale[] = ['en', 'zh', 'ar', 'es', 'fr', 'ru', 'pt'];
+// export const locales: Locale[] = ['en', 'zh', 'ar', 'es', 'fr', 'ru', 'pt'];
+export const locales: Locale[] = ['en'];
 
 export const defaultLocale: Locale = 'en';
 
 export const localeNames: Record<Locale, string> = {
   en: 'English',
-  zh: '中文',
-  ar: 'العربية',
-  es: 'Español',
-  fr: 'Français',
-  ru: 'Русский',
-  pt: 'Português',
+  // zh: '中文',
+  // ar: 'العربية',
+  // es: 'Español',
+  // fr: 'Français',
+  // ru: 'Русский',
+  // pt: 'Português',
 };
 
 export const LocaleOptions = [

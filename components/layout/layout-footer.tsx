@@ -2,8 +2,11 @@
 
 import { cn } from '@/lib/utils';
 import { useTranslations } from 'next-intl';
-import { BrandLink, getFooterLinkGroups, NavigationItem } from './layout-shared';
+import { BrandLink, getFooterLinkGroups, NavigationGroup } from './layout-shared';
 import { Link } from '../ui/link';
+import { RouteEnum } from '@/constants/route';
+import AppleIcon from './svg/apple.svg';
+import GooglePlayIcon from './svg/googlePlay.svg';
 
 type LayoutFooterProps = React.ComponentProps<'footer'> & {
   year: number;
@@ -11,84 +14,118 @@ type LayoutFooterProps = React.ComponentProps<'footer'> & {
 
 export function LayoutFooter({ className, year, ...props }: LayoutFooterProps) {
   const t = useTranslations('app.layout');
-  const linkGroups = getFooterLinkGroups(t);
+  const linkGroups = getFooterLinkGroups();
 
   return (
     <footer data-slot="layout-footer" className={cn(className)} {...props}>
-      <div className="grid gap-8 md:grid-cols-[1.2fr_0.8fr_0.8fr]">
-        <div className="rounded-[28px] border border-white/70 bg-white/75 p-6 shadow-[0_24px_70px_-48px_rgba(6,41,54,0.85)]">
-          <BrandLink />
-          <p className="mt-4 max-w-xl text-sm leading-7 text-[#55727f]">
-            {t('footer.description')}
-          </p>
-          <p className="mt-4 text-sm leading-7 text-[#55727f]">{t('footer.note')}</p>
+      <div className="flex flex-row items-stretch justify-between gap-10 max-md:flex-col max-md:items-center">
+        {/* 底部第一块 */}
+        <div className="flex flex-col">
+          <BrandLink className="h-auto w-[clamp(180px,25vw,361px)] max-md:h-4" />
 
-          <div className="mt-6 flex flex-wrap gap-3">
-            {linkGroups.flatMap((group) =>
-              group.items.map((item) => (
-                <FooterIconLink
-                  key={item.href}
-                  href={item.href}
-                  label={item.label}
-                  icon={item.icon}
-                />
-              )),
-            )}
+          <div className="my-6 flex flex-wrap gap-[clamp(1rem,3.5vw,50px)]">
+            {linkGroups.flatMap((item) => (
+              <FooterIconLink
+                key={item.href}
+                href={item.href}
+                label={item.label}
+                icon={item.icon}
+              />
+            ))}
+          </div>
+
+          <div className="mt-auto">
+            {t('footer.companyName')} @{year}
           </div>
         </div>
 
-        {linkGroups.map((group) => (
-          <div
-            key={group.title}
-            className="rounded-[28px] border border-white/70 bg-white/72 p-6 shadow-[0_24px_70px_-48px_rgba(6,41,54,0.85)]"
-          >
-            <h3 className="text-xs font-semibold tracking-[0.22em] text-[#7c97a5] uppercase">
-              {group.title}
-            </h3>
-            <div className="mt-5 space-y-2">
-              {group.items.map((item) => {
-                const Icon = item.icon;
-
-                return (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    className="group flex items-center gap-3 rounded-2xl px-3 py-3 text-sm text-[#35535f] transition hover:bg-[#eef5f8] hover:text-[#062936]"
-                  >
-                    <span className="inline-flex size-10 items-center justify-center rounded-full bg-[#edf5f8] text-[#062936] transition group-hover:bg-[#062936] group-hover:text-white">
-                      <Icon className="size-4" />
-                    </span>
-                    <span className="font-medium">{item.label}</span>
-                  </Link>
-                );
-              })}
+        {/* 底部第二块 */}
+        <div className="flex gap-6">
+          <div className="flex flex-col gap-3">
+            <div className="font-sigmar text-xl text-[#321403] uppercase">
+              {t('footer.aboutUs')}
             </div>
+            {[
+              {
+                href: RouteEnum.aboutUs,
+                label: t('footer.aboutUs'),
+              },
+              {
+                href: RouteEnum.blog,
+                label: t('footer.blog'),
+              },
+              {
+                href: RouteEnum.contactUs,
+                label: t('footer.contactUs'),
+              },
+            ].map((item) => (
+              <Link key={item.href} href={item.href} className="text-base text-[#602F13]">
+                {item.label}
+              </Link>
+            ))}
           </div>
-        ))}
-      </div>
 
-      <div className="mt-6 flex flex-col gap-3 border-t border-[#d7e4eb] pt-5 text-sm text-[#6f8a97] sm:flex-row sm:items-center sm:justify-between">
-        <span>
-          {t('brand.name')} © {year}
-        </span>
-        <span>{t('footer.shopWindow')}</span>
+          <div className="flex flex-col gap-3">
+            <div className="font-sigmar text-xl text-[#321403] uppercase">
+              {t('footer.parentZone')}
+            </div>
+            {[
+              {
+                href: RouteEnum.returnPolicy,
+                label: t('footer.deliveryAndReturns'),
+              },
+              {
+                href: RouteEnum.FAQ,
+                label: t('footer.FAQ'),
+              },
+              {
+                href: RouteEnum.privacyPolicy,
+                label: t('footer.privacyPolicy'),
+              },
+              {
+                href: RouteEnum.termsOfUse,
+                label: t('footer.termsOfUse'),
+              },
+            ].map((item) => (
+              <Link key={item.href} href={item.href} className="text-base text-[#602F13]">
+                {item.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* 底部第三块 */}
+        <div className="flex flex-col gap-3 max-md:items-center">
+          <div className="font-sigmar text-xl text-[#321403] uppercase">
+            {t('footer.stayInLoop')}
+          </div>
+
+          <div className="w-[clamp(200px,26vw,377px)] rounded-3xl border-2 border-[#321403] bg-[#fff] p-5">
+            email address
+          </div>
+
+          <div className="mt-3 mb-8 self-end rounded-[24px] bg-[#321403] px-15 py-5 font-sigmar text-[26px] text-[#FAF5F1]">
+            {t('footer.subscribe')}
+          </div>
+
+          <div className="flex gap-5 self-end">
+            <AppleIcon className="h-auto w-30"></AppleIcon>
+            <GooglePlayIcon className="h-auto w-30"></GooglePlayIcon>
+          </div>
+        </div>
       </div>
     </footer>
   );
 }
 
-function FooterIconLink({
-  href,
-  label,
-  icon: Icon,
-}: Pick<NavigationItem, 'href' | 'label' | 'icon'>) {
+function FooterIconLink({ href, label, icon: Icon }: NavigationGroup) {
   return (
     <Link
       href={href}
       aria-label={label}
-      className="inline-flex size-11 items-center justify-center rounded-full border border-[#d7e4eb] bg-white text-[#062936] shadow-[0_18px_50px_-36px_rgba(6,41,54,0.8)] transition hover:-translate-y-0.5 hover:bg-[#062936] hover:text-white"
+      className="inline-flex items-center justify-center transition hover:-translate-y-0.5"
     >
-      <Icon className="size-4" />
+      <Icon className="h-auto w-[clamp(42px,5.5vw,80px)]" />
     </Link>
   );
 }

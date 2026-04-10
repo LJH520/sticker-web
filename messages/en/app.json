@@ -104,9 +104,18 @@
       "title": "Navigation"
     },
     "footer": {
-      "description": "A storefront-style AI hub for global language learners.",
-      "note": "Products, editorial content, and policies inside a single storefront frame.",
-      "shopWindow": "Browse Speakami products, editorial content, and help like a storefront."
+      "FAQ": "FAQ",
+      "aboutUs": "About Us",
+      "blog": "Blog",
+      "companyName": "公司名称",
+      "contactUs": "Contact Us",
+      "deliveryAndReturns": "Delivery & Returns",
+      "parentZone": "Parent Zone",
+      "privacyPolicy": "Privacy Policy",
+      "stayInLoop": "STAY IN THE LOOP",
+      "subscribe": "Subscribe",
+      "termsOfUse": "Terms & Conditions",
+      "useCases": "Use Cases"
     },
     "links": {
       "privacyPolicy": "Privacy Policy",
@@ -114,8 +123,13 @@
     },
     "nav": {
       "blog": "BLOG",
+      "buyLumobox": "Buy Lumobox",
       "faq": "FAQ",
-      "products": "Products"
+      "products": "Products",
+      "subNav": {
+        "buyLumobox": "Buy Lumobox",
+        "buyPrintRolls": "Buy print rolls"
+      }
     },
     "sections": {
       "discover": "Discover",
