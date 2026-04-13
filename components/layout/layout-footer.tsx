@@ -104,7 +104,7 @@ export function LayoutFooter({ className, year, ...props }: LayoutFooterProps) {
             email address
           </div>
 
-          <div className="mt-3 mb-8 self-end rounded-[24px] bg-[#321403] px-15 py-5 font-sigmar text-[26px] text-[#FAF5F1]">
+          <div className="mt-3 mb-8 cursor-pointer self-end rounded-[24px] bg-[#321403] px-15 py-5 font-sigmar text-[26px] text-[#FAF5F1] transition hover:-translate-y-0.5">
             {t('footer.subscribe')}
           </div>
 

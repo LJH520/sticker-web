@@ -3,7 +3,8 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Metadata } from 'next';
 import { getMetadata, Locale } from '@/i18n/config';
 import { RouteEnum } from '@/constants/route';
-import { getProducts, safeGetProducts } from '@/api';
+import { safeGetProducts } from '@/api';
+import { Top } from './components/Top';
 
 export async function generateMetadata({
   params,
@@ -28,7 +29,8 @@ export default async function Page({ params }: { params: Promise<{ locale: Local
   setRequestLocale(locale);
 
   return (
-    <section className="flex h-full flex-1 flex-col bg-[url('/images/home-bg.png')] bg-cover bg-center bg-no-repeat p-10 pt-30">
+    <section className="flex h-full flex-1 flex-col bg-[url('/images/home-bg.png')] bg-cover bg-center bg-no-repeat pt-30">
+      <Top locale={locale} />
       <h1 className="text-2xl font-bold text-gray-800">{'首页'}</h1>
       <h1 className="text-2xl font-bold text-gray-800">{'首页'}</h1>
       <h1 className="text-2xl font-bold text-gray-800">{'首页'}</h1>

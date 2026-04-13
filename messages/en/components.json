@@ -1,9 +1,17 @@
 {
-  "header": {
-    "title": "Header",
-    "navigation": "Navigation"
-  },
   "footer": {
     "copyright": "© 2025 All rights reserved"
+  },
+  "header": {
+    "navigation": "Navigation",
+    "title": "Header"
+  },
+  "home": {
+    "description": "Welcome to Lumobox, where every wild idea deserves to be a sticker. Explore our collection of fun and creative stickers that bring your imagination to life!",
+    "title": "Home",
+    "top": {
+      "lumobox": "lumobox",
+      "lumoboxInfo": " Every wild idea deserves to be a sticker."
+    }
   }
 }
